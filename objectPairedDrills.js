@@ -134,3 +134,7 @@
 //   console.log(`${key}'s value is ${object[key]}`);
 // }
 // ////////////////
+
+
+const object3 = {meals:['breakfast','second breakfast','elevenses','lunch','afternoon tea','dinner','supper']}
+console.log(object.meals[3])
