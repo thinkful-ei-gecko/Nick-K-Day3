@@ -50,7 +50,7 @@ function keyDeleter(obj) {
 const example = [{name: 'Johnny Robot', grade: 'C'}];
 console.log(makeStudentsReport(example));*/
 
-const studentData = [
+/*const studentData = [
   {
     name: 'Tim',
     status: 'Current student',
@@ -107,4 +107,27 @@ for(let i = 0; i < keys.length; i ++){
   }
 else{return false}
 }
+}*/
+
+/*const loaf = {
+  flour: 300,
+  water: 210,
+  hydration() {
+    return (this.water / this.flour) * 100;
+  },
+}
+console.log(loaf.flour);
+console.log(loaf.water);
+console.log(loaf.hydration());*/
+
+const object = {
+  foo: 'hello',
+  bar: 42,
+  fum: true,
+  quux: 'string',
+  spam: 5
+}
+
+for (let key in object) {
+  console.log(`${key}'s value is ${object[key]}`);
 }
