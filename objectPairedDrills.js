@@ -185,20 +185,32 @@
 // function decode(string, object) {
 //   let result = [];
 //   let array = string.split(' ');
+//   let keys = Object.keys(object);
 //   for (let i = 0; i < array.length; i++) {
-//     for (let key in object) {
-//       if (array[i][0] === key) {
-//         result.push(array[i][object[key] - 1]);
-//       }
+//     if (array[i][0] === keys[0]) {
+//       result.push(array[i][1]);
+//     } else if (array[i][0] === keys[1]) {
+//       result.push(array[i][2]);
+//     } else if (array[i][0] === keys[2]) {
+//       result.push(array[i][3]);
+//     } else if (array[i][0] === keys[3]) {
+//       result.push(array[i][4]);
+//     } else {
+//       result.push(' ');
 //     }
 //   }
-//   return result;
+//   return result.join('');
 // }
-
 // console.log(decode(input, cipher));
-// ////////////////
 
-function createCharacter(){
+// function decodeWords(string, object) {
+//   let finalResult = decode(string, object);
+// }
+// console.log(decodeWords(input, cipher));
+
+////////////////
+
+/*function createCharacter(name, nickname, race, origin, attack, defense, weapon) {
   const lotrChar = ['Gandalf the White', 'Bilbo Baggins', 'Frodo Baggins', 'Aragorn son of Arathorn', 'Legolas'];
   return {
     name,
@@ -207,18 +219,20 @@ function createCharacter(){
     origin,
     attack,
     defense,
-    describe(){
-      console.log(`${this.name} is a ${this.race} from ${this.origin}.`);
+    weapon,
+    describe() {
+      console.log(`${this.name} is a ${this.race} from ${this.origin} who uses ${this.weapon}`);
     },
-    evaluateFight(character){
-      if(y - x <= 0){
-        return 'Your opponent takes 0 damage'
+    evaluateFight(opponent) {
+      let damageWeReceive = opponent.attack - this.defense;
+      let damageOpponentReceives = this.attack - opponent.defense;
+      if (damageWeReceive < 0) {
+        return `Your opponent takes ${damageOpponentReceives} damage and you receive 0 damage`;
+      } else {
+        return `Your opponent takes ${damageOpponentReceives} damage and you receive ${damageWeReceive} damage`;
       }
-
-        
     }
-
-  }
+  };
 }
 
 const gandalf = createCharacter('Gandalf the White', 'gandalf', 'Wizard', 'Middle Earth', 10, 6);
@@ -230,12 +244,15 @@ const characters = [gandalf, bilbo, frodo, aragorn, legolas];
 
 characters.push(createCharacter('Arwen Undomiel is a Half-Elf of Rivendell', 'arwen', 'Elf', 'Rivendell', 10, 10));
 
-let aragornDescribe = characters.find(nickname => {
-  if (nickname === 'aragorn') {
-    console.log(describe());
-  }
-});
+let aragornDescribe = characters.find((char, nickname) => char.nickname === 'aragorn');
+// console.log(aragornDescribe.describe());
 
-let onlyHobbits = characters.filter(race => race === 'Hobbit');
+let onlyHobbits = characters.filter((char, race) => char.race === 'Hobbit');
+// console.log(onlyHobbits);
 
-let attackAboveFive = characters.filter(attack => attack > 5);
+let attackAboveFive = characters.filter((char,attack) => char.attack > 5);
+// console.log(attackAboveFive);
+
+gandalf.weapon = 'staff';
+console.log(gandalf.describe());*/
+////////////////
