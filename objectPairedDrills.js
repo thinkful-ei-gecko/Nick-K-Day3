@@ -89,3 +89,22 @@ let input = [
 ];
 
 console.log(enrollInSummerSchool(input));
+
+
+function findById(items,idNum){
+  for(let i = 0;i < items.length; i++){
+    if(items[i].id === idNum){
+      return items[i]
+    }
+  }
+}
+
+function validateKeys(object,expectedKeys){
+  let keys = Object.keys(object);
+for(let i = 0; i < keys.length; i ++){
+  if(keys[i] === expectedKeys[i] && keys.length === expectedKeys.length){
+    return true;
+  }
+else{return false}
+}
+}
