@@ -136,5 +136,32 @@
 // ////////////////
 
 
-const object3 = {meals:['breakfast','second breakfast','elevenses','lunch','afternoon tea','dinner','supper']}
-console.log(object.meals[3])
+// const hobbit = {
+//   meals: ['breakfast','second breakfast','elevenses','lunch','afternoon tea','dinner','supper']
+// };
+// console.log(hobbit.meals[3]);
+// ////////////////
+
+// let person1 = {
+//   name: 'Will',
+//   jobTitle: 'Programmer'
+// };
+// let person2 = {
+//   name: 'Nick',
+//   jobTitle: 'Developer'
+// };
+// let person3 = {
+//   name: 'Steve',
+//   jobTitle: 'Swimmer'
+// };
+
+// let personArray = [person1, person2, person3];
+
+// function arrayOfObjects(array) {
+//   for (let i = 0; i < array.length; i++) {
+//     console.log(`This person's name is ${array[i].name} and their job is a ${array[i].jobTitle}`);
+//   }
+// }
+
+// arrayOfObjects(personArray);
+// ////////////////
