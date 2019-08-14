@@ -142,35 +142,58 @@
 // console.log(hobbit.meals[3]);
 // ////////////////
 
-let person1 = {
-  name: 'Will',
-  jobTitle: 'Programmer',
-  boss: 'juan'
-};
-let person2 = {
-  name: 'Nick',
-  jobTitle: 'Developer',
-  boss: 'Jen'
-};
-let person3 = {
-  name: 'Steve',
-  jobTitle: 'Swimmer'
-};
+// let person1 = {
+//   name: 'Will',
+//   jobTitle: 'Programmer',
+//   boss: 'juan'
+// };
+// let person2 = {
+//   name: 'Nick',
+//   jobTitle: 'Developer',
+//   boss: 'Jen'
+// };
+// let person3 = {
+//   name: 'Steve',
+//   jobTitle: 'Swimmer'
+// };
 
-let personArray = [person1, person2, person3];
+// let personArray = [person1, person2, person3];
 
-function arrayOfObjects(array) {
-  for (let i = 0; i < array.length; i++) {
-    if('boss' in array[i]){
-        console.log(`${array[i].jobTitle} ${array[i].name} reports to ${array[i].boss}`);
-    }
-    else{console.log(`${array[i].jobTitle} ${array[i].name} doesn't report to anybody.`);
+// function arrayOfObjects(array) {
+//   for (let i = 0; i < array.length; i++) {
+//     if('boss' in array[i]){
+//         console.log(`${array[i].jobTitle} ${array[i].name} reports to ${array[i].boss}`);
+//     }
+//     else{console.log(`${array[i].jobTitle} ${array[i].name} doesn't report to anybody.`);
 
-  }
+//   }
   
-}
-}
-arrayOfObjects(personArray);
+// }
+// }
+// arrayOfObjects(personArray);
+// ////////////////
 
+// const cipher = {
+//   a: 2,
+//   b: 3,
+//   c: 4,
+//   d: 5
+// };
 
+// let input = 'craft block argon meter bells brown croon droop';
 
+// function decode(string, object) {
+//   let result = [];
+//   let array = string.split(' ');
+//   for (let i = 0; i < array.length; i++) {
+//     for (let key in object) {
+//       if (array[i][0] === key) {
+//         result.push(array[i][object[key] - 1]);
+//       }
+//     }
+//   }
+//   return result;
+// }
+
+// console.log(decode(input, cipher));
+// ////////////////
