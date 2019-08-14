@@ -142,26 +142,35 @@
 // console.log(hobbit.meals[3]);
 // ////////////////
 
-// let person1 = {
-//   name: 'Will',
-//   jobTitle: 'Programmer'
-// };
-// let person2 = {
-//   name: 'Nick',
-//   jobTitle: 'Developer'
-// };
-// let person3 = {
-//   name: 'Steve',
-//   jobTitle: 'Swimmer'
-// };
+let person1 = {
+  name: 'Will',
+  jobTitle: 'Programmer',
+  boss: 'juan'
+};
+let person2 = {
+  name: 'Nick',
+  jobTitle: 'Developer',
+  boss: 'Jen'
+};
+let person3 = {
+  name: 'Steve',
+  jobTitle: 'Swimmer'
+};
 
-// let personArray = [person1, person2, person3];
+let personArray = [person1, person2, person3];
 
-// function arrayOfObjects(array) {
-//   for (let i = 0; i < array.length; i++) {
-//     console.log(`This person's name is ${array[i].name} and their job is a ${array[i].jobTitle}`);
-//   }
-// }
+function arrayOfObjects(array) {
+  for (let i = 0; i < array.length; i++) {
+    if('boss' in array[i]){
+        console.log(`${array[i].jobTitle} ${array[i].name} reports to ${array[i].boss}`);
+    }
+    else{console.log(`${array[i].jobTitle} ${array[i].name} doesn't report to anybody.`);
 
-// arrayOfObjects(personArray);
-// ////////////////
+  }
+  
+}
+}
+arrayOfObjects(personArray);
+
+
+
