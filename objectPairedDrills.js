@@ -4,6 +4,7 @@ function createMyObject(){
     myObj.hello = function(){
         return 'hello' 
     }
+    return myObj;
 }
 function updateObject(obj){
     obj.foo = 'foo';
