@@ -232,8 +232,8 @@ function createCharacter(){
             console.log(`${this.name} is a ${this.race} from ${this.origin}.`);
         },
         evaluateFight(character){
-            if(y - x >= 0){
-                return 'Your opponent takes o damage'
+            if(y - x <= 0){
+                return 'Your opponent takes 0 damage'
             }
 
         
@@ -241,5 +241,7 @@ function createCharacter(){
 
 }
 }
+
+
 
 
