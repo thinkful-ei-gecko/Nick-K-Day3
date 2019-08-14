@@ -197,3 +197,49 @@
 
 // console.log(decode(input, cipher));
 // ////////////////
+
+
+
+function createCharacter(name,nickname,race,origin,attack,defense){
+    const lotrChar = {
+        Name:'name',
+        Nickname: 'nickname',
+        Race: 'race',
+        Origin: 'origin',
+        Attack: 'attack',
+        Defense: 'defense',
+        Describe(){
+            console.log(`${Name} is a ${race} from ${origin}.`);
+        }
+    }
+    lotrChar.Name = name;
+    lotrChar.Nickname = nickname;
+    lotrChar.Race = race;
+    lotrChar.Origin = origin;
+    lotrChar.Attack = attack;
+    lotrChar.Defense = defense;
+}
+function createCharacter(){
+    const lotrChar = ['Gandalf the White', 'Bilbo Baggins', 'Frodo Baggins', 'Aragorn son of Arathorn', 'Legolas'];
+    return {
+        name,
+        nickname,
+        race,
+        origin,
+        attack,
+        defense,
+        describe(){
+            console.log(`${this.name} is a ${this.race} from ${this.origin}.`);
+        },
+        evaluateFight(character){
+            if(y - x >= 0){
+                return 'Your opponent takes o damage'
+            }
+
+        
+    }
+
+}
+}
+
+
