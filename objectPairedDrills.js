@@ -14,3 +14,13 @@ function updateObject(obj){
     return obj;
 }
 
+function personMaker(){
+    var person ={
+        firstName: 'Nick',
+        lastName: 'Kerner',
+    fullName: function(){
+        return this.firstName + ' ' + this.lastName;
+    }
+    }
+}
+
